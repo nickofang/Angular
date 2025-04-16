@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Action Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2>Welcome to the Action Page!</h2>
+</ion-content>
+
+<div class="ag-theme-alpine" style="height: 500px; width: 100%;">
+  <!-- AG Grid Container -->
+    <ag-grid-angular
+      style="width: 100%; height: 100%;" 
+      class="ag-theme-alpine"
+      [columnDefs]="columnDefs"
+      [rowData]="rowData"
+      [modules]="modules"
+      rowSelection="multiple">
+      (selectionChanged)="onSelectionChanged()">
+
+    </ag-grid-angular>
+  
+</div>
+
+
+<!-- Button for action (example: Book Delivery Slot) -->
+<ion-button>Book Delivery Slot</ion-button>
